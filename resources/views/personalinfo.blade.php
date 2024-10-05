@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,39 +8,12 @@
     @vite (['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)">
-                <img src="../assets/img/logo.png" height="30">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./registration.php">Student Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./postalCode.php">Postal Code Registration</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.php">Dashboard</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
         <br>
-        <p>You can add record for student here.</p>
         <div class="card mt-3">
 
             <form action="/models/save.php" method="POST">
-                <div class="card-header h3">Registration Form</div>
+                <div class="card-header h3">Personal Information</div>
                 <div class="card-body">
                     <?php
                     if (isset($_GET['success'])) {
