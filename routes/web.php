@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/',[PelarezController::class, "personalinfo"]);
+Route::get('/personalinfo',[PelarezController::class, "personalinfo"]);
